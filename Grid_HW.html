@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid_HW</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 280px 20px 80px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 16px;
+            font-style: normal;
+            color: black;
+            font-weight: 500;
+            margin-right: 15px;
+            padding: 5px;
+            background-color: #E5E5E5;
+        }
+
+        a:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        div#image {
+            margin-left: 120px;
+            margin-right: 20px;
+        }
+
+        #image img {
+            width: 25px;
+            height: 25px;
+        }
+
+        .grid1 {
+            display: grid;
+            grid-template-columns: 700px;
+            grid-template-rows: auto;
+            background-color: white;
+
+
+        }
+
+        h1 {
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 60px;
+            padding: 0 15px 0 15px;
+        }
+
+        h5 {
+            font-family: 'PT Serif';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 27px;
+            margin: 0;
+        }
+
+        h3 {
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 30px;
+            counter-reset: number;
+            margin-bottom: 4px;
+            margin-top: 10px;
+        }
+
+        .grid1 {
+            counter-reset: section;
+        }
+
+        .grid1 h3::before {
+            counter-increment: section;
+            content: "" counter(section) ".";
+        }
+
+        .two pre {
+            width: 600px;
+            height: 150px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            justify-items: left;
+
+        }
+
+        .two {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        article {
+            margin: 10px;
+            padding: 5px;
+            font-family: 'PT Serif';
+            font-style: normal;
+
+            font-size: 16px;
+            line-height: 27px;
+        }
+
+        body,
+        header {
+            background-color: #E5E5E5;
+        }
+
+        div#grid2 {
+
+            margin-left: 20px;
+            justify-items: center;
+
+        }
+
+        h6 {
+            margin: 0;
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2> The Blog</h2>
+        <nav>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <div style="display: flex;">
+            <div id="image">
+                <img src="./ryka.png">
+                <p>125</p>
+                <img src="./Vector.png">
+                <p>46</p>
+                <img src="./Vector (2).png">
+                <p>70</p>
+            </div>
+            <div class="grid1">
+                <img style="width: 700px;" src="./Rectangle 3.png">
+                <h1><b>Learn the hidden feature in Git - Stash</b></h1>
+                <article> <img src="./Group 155.png"></article>
+                <span style="display: flex; align-content: center; ">
+                    <img style="width: 50px; height: 50px; margin: 10px;" src="./Ellipse 1.png">
+
+                    <div>
+                        <h4 style="margin-bottom: 0; ">John Doe</h4>
+                        <p style="margin-top: 3px;">May 12 Originally published at boburjon.netlify.app 3 min read</p>
+                    </div>
+                </span>
+                <article>
+                    <h5>Lorem ipsum, everyone 👏</h5>
+                </article>
+                <article>
+                    <h5>Lacinia ut gravida tempus sollicitudin condimentum sit urna cursus malesuada. Eu lacus
+                        dis et tempor non. Odio tristique dignissim lorem ipsum vestibulum. Cras quisque praesent.</h5>
+                </article>
+
+                <ol>
+                    <li>
+                        <h5>Lacinia ut gravida tempus sollicitudin;</h5>
+                    </li>
+                    <li>
+                        <h5>Terima kasih banyak;</h5>
+                    </li>
+                    <li>
+                        <h5>Lorem lorem lorem </h5>
+                    </li>
+                    <li>
+                        <h5>Something cool here goes</h5>
+                    </li>
+                </ol>
+
+                <article>
+                    <h3>What is Stash</h3>Lacinia ut gravida tempus sollicitudin condimentum sit urna
+                    cursus malesuada. Eu lacus dis et tempor non. Odio tristique dignissim lorem ipsum vestibulum. Cras
+                    quisque praesent.
+                </article>
+
+                <article>
+                    <h3>When to use Stash</h3>Lacinia ut gravida tempus sollicitudin condimentum sit urna
+                    cursus malesuada. Eu lacus dis et tempor non. Odio tristique dignissim lorem ipsum.com vestibulum.
+                    Cras
+                    quisque praesent.
+                </article>
+
+                <article>
+                    <h3>How to use Stash</h3>Lacinia ut gravida tempus sollicitudin condimentum sit
+                    urna cursus malesuada. Eu lacus dis et tempor non. Odio
+                </article>
+                <span class="two">
+                    <pre><code>
+  class Car {
+  constructor(name) {
+  this.name = name;
+             }
+  static hello() {
+  return "Hello!!";
+      }
+      }
+                            
+  let myCar = new Car("Ford");
+                        </code></pre>
+                </span>
+                <article>In the same<span
+                        style="background: #EDEDED;border-radius: 8px;padding: 4px;font-size: 14px; font-family: consolas;">
+                        <sup> master</sup> </span>
+                    Faucibus potenti mi, mi placerat sit ornare. Mauris eu sit dignissim at neque nunc.
+                    feature-2.js file which is not ready yet.</article>
+
+                <article>Augue laoreet vulputate risus leo lacus consectetur. Sed
+                    vitae mollis ornare tincidunt arcu lorem auctor. Massa <span
+                        style="background: #EDEDED;border-radius: 8px;padding: 4px;font-size: 14px; font-family: consolas;">
+                        <sup> StyledComponents.js</sup></span>
+                    Proin est ullamcorper non felis sapien dignissim lectus. Varius dictumst.
+                    Molestie commodo tincidunt ultrices quam ut faucibus. Tincidunt leo non ac dictum.</article>
+                <span class="two">
+                    <pre><code>
+  function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
+                              }
+  function myCalculator(num1, num2, myCallback) {
+  let sum = num1 + num2;
+  myCallback(sum);
+                    }
+  myCalculator(5, 5, myDisplayer);</code></pre>
+                </span>
+                <article>
+                    In the same <span
+                        style="background: #EDEDED;border-radius: 8px;padding: 4px;font-size: 14px; font-family: consolas;">
+                        <sup> master</sup> </span>Amet duis diam leo ultrices habitant faucibus turpis fermentum orci.
+                    Viverra.
+                    feature-2.js file which is not ready yet.
+                </article>
+
+            </div>
+            <div id="grid2">
+                <div style=" background-color: white;">
+                    <span style="display: flex; height: min-content;">
+                        <img style="width: 55px;height: 55px;margin: 8px;" src="./Ellipse 1.png">
+                        <div>
+                            <h6 style="height:17px"><b>John Doe</b></h6>
+                            <p style="margin-top: 4px;">nodejs developer</p>
+                        </div>
+                    </span>
+                    <span style="display: flex;justify-content: space-between;margin: 8px;">
+                        <div style="width: 50%;">
+                            <h6 style="opacity: 0.6;">Follows</h6>
+                            <p>1.5 K</p>
+                        </div>
+                        <div style="width: 50%;">
+                            <h6 style="opacity: 0.6;">Joined</h6>
+                            <p>May 12,2020</p>
+                        </div>
+                    </span>
+                    <button
+                        style="padding: 15px 80px;background-color: #034AFF;color: white; margin: 10px;">Follow</button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
