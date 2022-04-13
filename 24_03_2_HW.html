@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma №2</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            margin: 0;
+            align-items: center;
+            justify-items: center;
+            padding: 1em;
+        }
+
+        form li+li {
+            margin-top: 1em;
+        }
+
+        input {
+            margin-left: 2px;
+
+        }
+
+        ol {
+            padding: 0;
+            margin: 0;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            text-align: left;
+            margin: 0.3em;
+        }
+
+        input,
+        textarea {
+            width: 300px;
+            box-sizing: border-box;
+            font: 14px sans-serif;
+            margin: 0;
+        }
+
+        textarea {
+            vertical-align: top;
+        }
+
+        .hobby input {
+            width: 20px;
+            margin: 4px;
+        }
+
+        .pol input {
+            width: 40px;
+            margin-left: 5px;
+
+        }
+
+        section {
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+            justify-content: flex-start;
+            align-items: center;
+            align-content: center;
+            justify-items: flex-start;
+            margin-right: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <form action="#" method="post">
+            <ol>
+                <li>
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" name="name">
+                </li>
+                <li>
+                    <label for="psw">Пароль:</label>
+                    <input type="password" name="psw">
+                </li>
+                <li class="pol">
+                    <label for="pol">Пол</label>
+                    <input type="radio" name="pol">мужской
+                    <input type="radio" name="pol">женский
+
+                </li>
+
+
+                <li class="hobby">
+
+
+                    <label for="hobby">Ваши увлечения:</label>
+                    музыка <input type="checkbox" name="hobby">
+                    Видео <input type="checkbox" name="hobby">
+                    Рисование <input type="checkbox" name="hobby">
+                </li>
+                <li>
+                    <label for="city-select">Ваш город </label>
+                    <select name="city" id="city-select" style="border: 2px solid red;border-radius: 5px;">
+                        <option value="Brest">Брест</option>
+                        <option value="Minsk">Минск</option>
+                        <option value="Grodno">Гродно</option>
+                        <option value="Mogilev">Могилёв</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="story">Кратко о себе</label>
+                    <textarea id="story" name="story" placeholder=" краткая информация о ваших увлечениях" rows="3"
+                        cols="30"></textarea>
+                </li>
+                <li> <label for="avatar">Аватар</label>
+                    <input type="text" name="avatar" style="background-color: rgb(150, 132, 132); width: 233px;">
+                    <button id="#">Обзор...</button>
+                </li>
+
+
+                <li>
+
+                    <button>Сброс</button>
+                    9. <button style="width: 120px;">Подтверждаю</button>
+                    10. <button style="width: 245px;">Кликне по мне просто так</button>
+
+                </li>
+
+            </ol>
+
+
+        </form>
+    </main>
+</body>
+
+</html>

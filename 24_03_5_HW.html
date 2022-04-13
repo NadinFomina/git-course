@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form №5</title>
+    <style>
+        body {
+            background-color: green;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        form {
+            background-color: white;
+            flex-direction: column;
+            display: flex;
+            width: 500px;
+            height: auto;
+            margin-top: 10px;
+            padding: 20px;
+          
+        }
+
+        input {
+            margin: 10px;
+            height: 2em;
+            text-align: start;
+            padding: 0;
+            
+        }
+
+        p {
+            text-align: center;
+        }
+
+        a {
+            color: blueviolet;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        h1 {
+            margin-bottom: 0;
+            font-family: 'Times New Roman', Times, serif;
+            color: gray;
+            margin-left: 10px;
+            padding-left: 1px;
+        }
+
+        h4 {
+            color: gray;
+            margin-top: 10px;
+            font-size: 13px;
+            margin-left: 10px;
+            padding-left: 1px;
+            margin-bottom: 0;
+        }
+
+        .last {
+            height: 60px;
+            vertical-align: top;
+
+        }
+       
+        button{
+            background-color:green ;
+            text-align: center;
+            color: white;
+            width: 480px;
+            height: 35px;
+            margin: 10px;
+            font-size: 20px;
+        }
+        input[type="text"]:-ms-input-placeholder{
+            text-align: start;
+            
+        }
+        
+      
+    </style>
+</head>
+
+<body>
+    <main>
+        <form action="#" method="post">
+            <h1> Colorlib Contact Form</h1>
+            <h4>Contact us for custom quote</h4>
+            <input type="text" id="form"   placeholder="You name">
+            <input type="email" id="form"  placeholder="Your email adress">
+            <input type="tel"  id="form" placeholder="Your Fone Number (optional)">
+            <input type="url" id="form"  placeholder="Your web site (optional)">
+            <input class="last" type="text"  id="form" placeholder="Type your messeage here">
+            <button>Submit</button> 
+            
+
+            <p>Designed by <a href="#">Colorib</a></p>
+
+        </form>
+    </main>
+</body>
+
+</html>

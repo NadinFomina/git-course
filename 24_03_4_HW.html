@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form №4</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 600px;
+            background-color: rgb(221, 210, 210);
+            padding: 20px;
+        }
+
+
+
+
+
+
+
+        h1 {
+            margin: 2px;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(100, 100, 104);
+            text-transform: uppercase;
+        }
+
+        h3 {
+            margin-top: 1px;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(122, 122, 124);
+            font-size: 14px;
+        }
+
+        label {
+            margin: 1px;
+
+            display: block;
+        }
+
+        input {
+            box-sizing: border-box;
+            vertical-align: top;
+            height: 2.5em;
+
+        }
+
+
+        button {
+            margin: 3px;
+            background-color: rgb(89, 50, 230);
+            width: 100px;
+            color: white;
+            height: 40px;
+        }
+        div{
+            display: flex;
+           
+        }
+       div div{
+           display: flex;
+           flex-direction: column;
+       }
+    </style>
+</head>
+
+<body>
+    <main>
+        <form>
+            <h1>Contact US</h1>
+            <h3>We'd love to hear from you,please drop us a line if you've any query.</h3>
+<div>
+            <div> <label for="Fname">First Name</label>
+                    <input class="one" type="text" name="Fname"> </div>
+            <div> <label for="Lname">Last Name </label>
+                <input type="text" name="Lname"></div>
+
+</div>
+            <label for="email">Email Adress</label>
+            <input type="email" name="email">
+            <label for="msg">Message</label>
+            <textarea name="msg" rows="4"></textarea>
+            <button>Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>

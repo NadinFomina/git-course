@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+
+            background: #E5E5E5;
+            display: flex;
+            flex-direction: column;
+            width: 1000px;
+            height: 3000px;
+
+        }
+        .oner {
+            background-color: #FFFFFF;
+            width: 700px;
+            height: 1800px;
+            margin: 10px;
+            position: absolute;
+            top: 140px;
+            left: 150px;
+        }
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background: #E5E5E5;
+        }
+
+        header ul {
+            list-style: none;
+            display: flex;
+            width: 395px;
+            height: 24px;
+        }
+
+        header ul li {
+            margin-right: 45px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 16px;
+            font-style: normal;
+            color: black;
+            font-weight: 500;
+        }
+
+        .oneimg {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 700px;
+            height: 300px;
+        }
+
+        .name {
+            font-family: Impact, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 50px;
+            position: absolute;
+            top: 30px;
+            left: 50px;
+        }
+
+        header nav {
+            position: absolute;
+            top: 43px;
+            left: 600px;
+        }
+
+        .img {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 155px;
+            left: 115px;
+           
+        }
+
+        .img img {
+            width: 20px;
+            height: 45px;
+            margin-bottom: 30px;
+        }
+
+        .two h1 {
+            position: relative;
+            top: 10px;
+            left: 40px;
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 60px;
+            width: 490px;
+            margin: 0;
+        }
+
+        .groupone {
+            position: relative;
+            top: 10px;
+            left: 40px;
+            width: 250px;
+            height: 24px;
+        }
+
+        .two span {
+            position: absolute;
+            top: 480px;
+            left: 40px;
+        }
+
+        .two span image {
+            position: relative;
+            float: left;
+
+        }
+
+
+        h4 {
+            width: 80px;
+            height: 21px;
+            position: absolute;
+            left: 65px;
+            top: 0;
+            margin: 0;
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 21px;
+        }
+
+        .two p {
+            position: absolute;
+            left: 65px;
+            top: 25px;
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            opacity: 0.5;
+            width: 339px;
+            margin: 0;
+        }
+
+        .L {
+            position: absolute;
+            top: 535px;
+            left: 40px;
+            font-family: 'PT Serif';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 27px;
+        }
+
+        .five {
+            position: absolute;
+            top: 565px;
+        }
+
+        article {
+            position: absolute;
+            left: 40px;
+            width: 560px;
+            font-family: 'PT Serif';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 27px;
+        }
+
+        .six {
+            position: absolute;
+            top: 644px;
+
+        }
+
+        .six ol {
+            padding-left: 13px;
+        }
+
+        h2 {
+            position: absolute;
+            left: 40px;
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 30px;
+
+        }
+
+        .second {
+            position: absolute;
+            top: 1970px;
+            left: 150px;
+            width: 700px;
+            height: 370px;
+            background-color: white;
+            margin: 8px;
+        }
+
+        .second span {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .second img {
+            width: 55px;
+            height: 55px;
+            margin-right: 60px;
+            position: absolute;
+            float: right;
+        }
+
+        .second ul {
+            list-style: none;
+        }
+
+        .second h5 {
+
+            margin-left: 80px;
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 21px;
+            margin-bottom: 5px;
+        }
+
+        .second p {
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            opacity: 0.5;
+            margin-top: 0;
+            margin-left: 80px;
+        }
+
+        .second li {
+            height: 55px;
+        }
+
+        .tree {
+            width: 297px;
+            height: 200px;
+            background-color: white;
+            position: absolute;
+            left: 890px;
+            top: 148px;
+        }
+
+        .tree img {
+            width: 55px;
+            height: 55px;
+            margin-right: 20px;
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            float: right;
+        }
+
+        .tree span {
+            display: flex;
+            flex-direction: row;
+
+
+        }
+
+        h6 {
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+            opacity: 0.7;
+            margin: 0;
+
+        }
+
+        .tree span h5 {
+            position: relative;
+            top: 10px;
+            left: 85px;
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            margin: 8px 0;
+        }
+
+        .last {
+            width: 297px;
+            height: 344px;
+            background-color: white;
+            position: absolute;
+            left: 890px;
+            top: 375px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .last span {
+            height: 67px;
+            border-bottom: 0.5px solid gray;
+            padding: 8px;
+        }
+
+        .last h7 {
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 21px;
+        }
+
+        .last p {
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 21px;
+            opacity: 0.7;
+        }
+        footer img{
+            position: absolute;
+            top: 2500px;
+            left: 684px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <span class="name">The Blog</span>
+        <nav>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="img">
+            <img style="background-color:transparent ;" src="./Group 148.png">
+            <img src="./Group 149.png">
+            <img src="./Group 150.png">
+        </section>
+        <section class="oner">
+            <img class="oneimg" src="./Rectangle 3.png">
+
+            <section class="two">
+                <h1><b>Learn the hidden feature in Git - Stash</b></h1>
+                <img  src="./Group 155.png">
+                <span>
+                    <img src="./Ellipse 1.png">
+
+                    <h4>John Doe</h4>
+                    <p>May 12 Originally published at boburjon.netlify.app 3 min read</p>
+                </span>
+
+            </section>
+            <span class="L">Lorem ipsum, everyone 👏</span>
+            <article class="five">Lacinia ut gravida tempus sollicitudin condimentum sit urna cursus malesuada. Eu lacus
+                dis et tempor non. Odio tristique dignissim lorem ipsum vestibulum. Cras quisque praesent.</article>
+            <article class="six">
+                <ol>
+                    <li>Lacinia ut gravida tempus sollicitudin;</li>
+                    <li>Terima kasih banyak;</li>
+                    <li>Lorem lorem lorem </li>
+                    <li>Something cool here goes</li>
+                </ol>
+            </article>
+            <h2 style="position: absolute; top: 780px;">1. What is Stash</h2>
+            <article style="position: absolute; top: 830px;">Lacinia ut gravida tempus sollicitudin condimentum sit urna
+                cursus malesuada. Eu lacus dis et tempor non. Odio tristique dignissim lorem ipsum vestibulum. Cras
+                quisque praesent.</article>
+            <h2 style="position: absolute;top: 918px;">2. When to use Stash</h2>
+            <article style="position: absolute;top: 968px;">Lacinia ut gravida tempus sollicitudin condimentum sit urna
+                cursus malesuada. Eu lacus dis et tempor non. Odio tristique dignissim lorem ipsum.com vestibulum. Cras
+                quisque praesent.</article>
+            <h2 style="position: absolute;top: 1046px;">3. How to use Stash</h2>
+            <article style="position: absolute; top:1096px ;">Lacinia ut gravida tempus sollicitudin condimentum sit
+                urna cursus malesuada. Eu lacus dis et tempor non. Odio
+                <span
+                    style="background: #EDEDED;border-radius: 8px;padding: 4px;font-size: 14px;font-family: consolas;">index.html</span>
+                Mauris vestibulum mauris fermentum ultrices amet. Sed neque amet viverra nibh.
+                Tempus cras pretium ullamcorper nulla eu cursus gravida. Sed tellus sapien mauris.
+            </article>
+            <img style="position: absolute;top: 1220px; left: 40px; width: 600px;" src="./Group 170.png">
+            <article style="position: absolute; top: 1380px;">In the same
+                <span
+                    style="background: #EDEDED;border-radius: 8px;padding: 4px;font-size: 14px; font-family: consolas;">
+                    master</span>
+                Faucibus potenti mi, mi placerat sit ornare. Mauris eu sit dignissim at neque nunc.
+                feature-2.js file which is not ready yet.
+            </article>
+            <article style="position: absolute;top: 1440px;">Augue laoreet vulputate risus leo lacus consectetur. Sed
+                vitae mollis ornare tincidunt arcu lorem auctor. Massa
+                <span
+                    style="background: #EDEDED;border-radius: 8px;padding: 4px;font-size: 14px; font-family: consolas;">
+                    StyledComponents.js</span>
+                Proin est ullamcorper non felis sapien dignissim lectus. Varius dictumst.
+                Molestie commodo tincidunt ultrices quam ut faucibus. Tincidunt leo non ac dictum.
+            </article>
+            <img style="position: absolute;top: 1560px; left: 40px; width: 600px;" src="./Group 169.png">
+            <article style="position: absolute;top: 1730px;">In the same
+                <span
+                    style="background: #EDEDED;border-radius: 8px;padding: 4px;font-size: 14px; font-family: consolas;">
+                    master</span>
+                Amet duis diam leo ultrices habitant faucibus turpis fermentum orci. Viverra.
+                feature-2.js file which is not ready yet.
+            </article>
+        </section>
+        <section class="second">
+            <h3
+                style="position: relative;left: 40px; top: 15px; font-size: 24px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                Read next</h3>
+            <ul>
+                <li> <img src="./Ellipse 1.png">
+                    <h5><b>3 Years of VueJS (2021) Link Only</b></h5>
+                    <p>Bobur Mavlonov - Apr 20</p>
+                </li>
+
+                <li> <img src="./Ellipse 1.png">
+                    <h5><b>How to choose colors and fonts correctly for your website</b></h5>
+                    <p>Sundar Pichai - Apr 20</p>
+                </li>
+
+                <li><img src="./Ellipse 1.png">
+                    <h5><b>Does PHP still live in 2021 despite of Wordpress and Laravel?</b></h5>
+                    <p>Pavel Durov - Apr 20</p>
+                </li>
+            </ul>
+        </section>
+        <section class="tree">
+            <span>
+                <img src="./Ellipse 1.png">
+                <h5><b>John Doe</b></h5>
+                <p style="position: relative;top: 33px;left: 8px; font-size: 12px; opacity: 0.6;">nodejs developer</p>
+            </span>
+            <span>
+                <div style="width: 68px;height: 57px; position: absolute; top: 78px;left: 20px;">
+                    <h6> followers</h6>
+                    <p style="margin-top: 0;"> 1.5k</p>
+                </div>
+                <div style="width: 90px;height: 57px; position: absolute; top: 78px;left: 148px;">
+                    <h6>Joined</h6>
+                    <p style="margin-top: 0;"> May 12, 2020</p>
+                </div>
+            </span>
+            <button
+                style="width: 257px; height: 43px;background-color: #034AFF; color: white;position: absolute; top: 137px; left: 20px;">Follow</button>
+        </section>
+        <section class="last">
+            <span
+                style="display: flex;flex-wrap: nowrap;align-items: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 18px; font-weight: 700;">
+                More from <section style="color: blue; margin-left: 15px;"> John Doe</section></span>
+            <span>
+                <h7>What's new in Angular version 12?🔥</h7><br>
+                <p>#angular #html #css #javascript</p>
+            </span>
+            <span>
+                <h7>Nullam magna tincidu nunc ante 🏆</h7><br>
+                <p>#angular #html #css #javascript</p>
+            </span>
+            <span style="border-bottom: none;">
+                <h7>Morbi sit volutpat, varius odio et. </h7>
+                <p>#angular #html #css #javascript</p>
+            </span>
+        </section>
+    </main>
+<footer>
+    <img src="./Group 1249.svg">
+</footer>
+</body>
+
+</html>
