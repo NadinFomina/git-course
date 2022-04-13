@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .container {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: repeat(7,25%);
+      text-align: center;
+      text-transform: uppercase;
+      margin: 50px 20px;
+   
+
+    }
+    nav{
+        grid-column: span 3;
+        background-color: palevioletred;
+        color: white;
+    }
+    header{
+        background-color: blue;
+        color: white;
+    }
+    .hero{
+        grid-column: span 4;
+        grid-row: span 3;
+        background-color: aquamarine;
+        color: white;
+    }
+    main{
+        grid-row: span 2;
+        grid-column: span 2;
+        background-color: rgb(21, 21, 80);
+        color: white;
+    }
+    .banner{
+        grid-column: span 4;
+        background-color: rgb(231, 245, 37);
+    }
+    .image{
+        grid-column: 4;
+        grid-row: 5;
+        background-color: blueviolet;
+    }
+    .extra{
+        grid-column: 4;
+        grid-row: 6;
+        background-color: rgb(97, 185, 25);
+    }
+    .container>*{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 24px;
+   }
+   @media (max-width: 1200px){
+     .container{
+       
+       width: 700px;
+     }
+     @media (max-width: 780px){
+       .container{
+         display: grid;
+         grid-template-columns: repeat(4,25%);
+         grid-template-rows: repeat(9,50px);
+         padding: 10px;
+       }
+       header{
+         grid-column: 1/5;
+       }
+       .hero{
+         grid-column: 1/5;
+         grid-row: 2/5;
+       }
+       nav{
+         grid-column: 1/2;
+         grid-row: 5/9;
+       }
+       main{
+         grid-column: 2/5;
+         grid-row: 5/7;
+       }
+       .banner{
+         grid-column: 2/5;
+         grid-row: 7/8;
+       }
+       .extra{grid-column: 2/4;
+      grid-row: 8/9;}
+      .image{
+        grid-row: 8/9;
+        grid-column: 4/5;
+      }
+
+     }
+     @media (max-width:380px){
+       .container{
+         display: flex;
+         flex-direction: column;
+         margin: 10px;
+         font-size: 14px;
+          margin-left: 5%;
+         margin-right: 5%;
+       }
+       
+       .container>*{
+         width: 30%;
+        
+     }
+     .hero, main{
+       height: 100px;
+     }
+     .banner, .extra, .image{
+       height: 70px;
+     }
+     header, nav{
+       height: 50px;
+     }
+
+    }
+
+   }
+   body{
+     width: 100%;
+     height: 100%;
+   }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>Header</header>
+      <nav>Menu</nav>
+      <div class="hero">Hero</div>
+      <main>Main</main>
+      <div class="banner">Banner</div>
+      <div class="extra">Extra</div>
+      <div class="image">Image</div>
+    </div>
+  </body>
+</html>
