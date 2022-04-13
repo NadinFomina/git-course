@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 6</title>
+    <Style>
+        body {
+           display: flex;
+            justify-content: center;
+            align-content: center;
+            margin-top: 30px;
+            height: min-content;
+        }
+
+        .container {
+            display: grid;
+        grid-template-columns: repeat(5, 70px);
+            grid-template-rows: repeat(8, 70px);
+            grid-gap: 5px;
+
+        }
+
+
+        *>div {
+            background-color: blueviolet;
+            height: 70px;
+            width: 70px;
+
+        }
+
+        .design {
+          grid-column: 2/4;
+           grid-row: 2/4;
+        }
+        .header{
+            display: grid;
+
+        }
+    </Style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="header">
+        <div>Photoshop</div>
+        <div>invision</div>
+        <div>UX</div>
+        <div class="design">Desion</div>
+    <div class="item_php">PHP</div>
+    <div class="item_rust">Rust</div>
+    <div class="item_Html">HTML</div>
+    </section>
+
+
+
+
+
+    </div>
+</body>
+
+</html>

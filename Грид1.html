@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{display: flex;
+        justify-content: center;
+    align-content: center;}
+        .container{
+            display: grid;
+            grid-template-columns: 300px;
+            grid-template-rows: auto;
+            text-align: center;
+            text-transform: uppercase;
+              
+        }
+        .container>*{
+            padding: 20px;
+            font-size: 30px;
+            color: white;
+        }
+        .banner:nth-child(n+1){
+            color: black;
+
+        }
+        </style>
+  </head>
+  <body>
+    <div class="container">
+      <header style="background:rgb(11, 11, 58);">Header</header>
+      <nav style="background-color: rgb(230, 105, 105);">Menu</nav>
+      <div class="hero"; style="background-color: rgb(68, 187, 235);">Hero</div>
+      <main style="background-color: rgb(99, 99, 190);">Main</main>
+      <div class="banner"; style="background-color:rgb(209, 209, 125);">Banner</div>
+      <div class="extra"; style="background-color:rgb(32, 221, 25);" >Extra</div>
+      <div class="image"; style="background-color: rgb(74, 116, 116);">Image</div>
+    </div>
+  </body>
+</html>

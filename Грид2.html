@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: repeat(7,50px);
+      text-align: center;
+      text-transform: uppercase;
+      margin: 50px;
+      grid-auto-flow: row;
+
+    }
+
+    header {
+      grid-column: span 4;
+      background-color: rgb(50, 50, 94);
+      color: white;
+      text-align: center;
+    }
+
+    nav {
+      grid-row: span 6;
+      background-color: rgb(240, 16, 121);
+      color: white;
+      text-align: center;
+    }
+    
+    .hero {
+      grid-column: span 3;
+      grid-row: span 2;
+      background-color: rgb(137, 137, 238);
+      color: white;
+      text-align: center;
+    
+    }
+    
+    main {
+      grid-column: span 3;
+      grid-row: span 2;
+      background-color: rgb(5, 5, 238);
+      color: white;
+      text-align: center;
+    }
+    .banner{
+      grid-column: span 3;
+      background-color: yellow;
+      color: black;
+    }
+    .image{
+      grid-column: span 2;
+      background-color: aquamarine;
+    }
+    .extra{
+      background-color: rgb(175, 240, 71);
+    }
+    .container>*{
+    
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-transform: uppercase;
+     font-size: 24px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>Header</header>
+    <nav>Menu</nav>
+    <div class="hero">Hero</div>
+    <main>Main</main>
+    <div class="banner">Banner</div>
+    <div class="extra">Extra</div>
+    <div class="image">Image</div>
+  </div>
+</body>
+
+</html>
