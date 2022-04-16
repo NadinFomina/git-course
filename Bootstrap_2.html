@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a59c52c30e.js" crossorigin="anonymous"></script>
+    <style>
+        main img {
+            width: 60px;
+            height: 50px;
+        }
+
+        body {
+            margin: 15px;
+            height: 1500px;
+        }
+        label{margin: 7px 0;}
+      .form-check{
+          display: flex;
+          align-items: center;
+      }
+      .form-check label{
+          margin-left: 10px;
+      }
+      footer a{
+          text-decoration: none;
+      }
+       
+    </style>
+</head>
+
+<body class="bg-light">
+    <div class="container">
+        <main>
+            <div class="text-center">
+                <img src="./bootstrap-logo.svg">
+                <h2>Checkout form</h2>
+                <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required
+                    form group has a validation state that can be triggered by attempting to submit the form without
+                    completing it.</p>
+            </div>
+            <div class="row g-5">
+                <div class="col g-5">
+                    <h2>Billing adress</h2>
+                    <div class="row">
+                        <div class="col">
+                            <label type="text">First name</label>
+                            <input type="text" class="form-control" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <label type="text">Last name</label>
+                            <input type="text" class="form-control" aria-label="Last name">
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <label type="text">Username</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                aria-describedby="basic-addon1">
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label type="email">Email <small class="text-muted">(Optional)</small></label>
+                        <input type="email" class="form-control" placeholder="you@example.com" id="exampleInputEmail1"
+                            aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="col">
+                        <label type="text">Adress</label>
+                        <input type="text" class="form-control" placeholder="1234 Main St" id="exampleInputEmail1"
+                            aria-describedby="street">
+                    </div>
+                    <div class="col">
+                        <label type="text">Adress 2 <small class="text-muted"> (Optional)</small></label>
+                        <input type="text" class="form-control" placeholder="Apartament or suite" id="exampleInputEmail1"
+                            aria-describedby="street">
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label type="form-select">Country</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                      </div>
+                      <div class="col">
+                        <label type="form-select">State</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                          </div>
+                          <div class="col">
+                            <label type="form-select">Zip</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                              </div>
+</div>
+<hr class="my-4">
+<div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+    <label class="form-check-label" for="flexCheckDefault">
+        Shipping address is the same as my billing address
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+    <label class="form-check-label" for="flexCheckChecked">
+        Save this information for next time
+    </label>
+  </div>
+  <hr class="my-4">
+<h4>Payment</h4>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"checked>
+    <label class="form-check-label" for="flexRadioDefault1">
+      Credit card
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+    <label class="form-check-label" for="flexRadioDefault2">
+   Debit card
+    </label>
+  </div>
+  <div class="form-check ">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+    <label class="form-check-label" for="flexRadioDefault2">
+  Paypal
+    </label>
+  </div>
+  <div class="row">
+    <div class="col">
+        <label type="text">Name on card</label>
+        <input type="text" class="form-control" aria-label="name on card">
+    </div>
+    <div class="col">
+        <label type="text">Credit card number</label>
+        <input type="text" class="form-control" aria-label="credit card number">
+    </div>
+    <small class="text-muted">Full name as displayed on card</small>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <label type="text">Expiration</label>
+        <input type="text" class="form-control" aria-label="expiration">
+    </div>
+    <div class="col-md-3">
+        <label type="text">CVV</label>
+        <input type="text" class="form-control" aria-label="cvv">
+    </div>
+    <hr class="my-4">
+</div>
+<div class="button">
+    <button class=" w-100 btn btn-primary" type="button">Continue to checkout</button>
+      </div>
+
+                </div>
+
+                <div class="col">
+                    <h4 class="d-flex justify-content-between">
+                        <span class="text-secondary">Your card</span>
+                        <span class="badge rounded-pill bg-secondary">3</span>
+                    </h4>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                          <div>  <h6>Product name</h6>
+                        <small class="text-muted">Brief description</small></div>
+                        <span class="text-muted">
+                            $12
+                        </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>  <h6>Second product</h6>
+                          <small class="text-muted">Brief description</small></div>
+                          <span class="text-muted">
+                              $8
+                          </span>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>  <h6>Third item</h6>
+                          <small class="text-muted">Brief description</small></div>
+                          <span class="text-muted">
+                              $5
+                          </span>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between lh-sm bg-light">
+                            <div class="text-success">  <h6 class="my-0" >Promo code</h6>
+                          <small >EXAMPLECODE</small></div>
+                          <span  class="text-success">
+                             - $5
+                          </span>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between lh-sm">
+                          <span>  Total (USD)</span>
+                          
+                          <strong> $20</strong>                             
+                         
+                      </ul>
+
+                  
+                    <div class="input-group bg-white" style="margin-top: 20px; padding: 10px; border: 0.1px solid lightgray;">
+                    <input type="text" class="form-control" placeholder="Prome code" aria-label="promo code" aria-describedby="button-addon2">
+  <button  class="btn btn-secondary" type="button" id="button-addon2">Redeem</button>
+                </div>
+                </div>
+                
+            </div>
+        </main>
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+            <p>© 2017–2021 Company Name</p>
+            <ul class="list-inline">
+                <li class="list-inline-item "><a href="#">Privacy</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Support</a></li>
+              </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
