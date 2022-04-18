@@ -65,23 +65,22 @@
         .two {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-           
-            align-items: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+
+
         }
 
-        .two>div {
+
+        .two div {
             background-color: grey;
             color: white;
-            padding: 20px;
+            padding: 60px;
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 400;
             font-size: 17px;
             line-height: 26px;
-            align-items: center;
-            height: 150px;
-            position: relative;
-            top: -20px;
         }
 
         .two div:first-child {
@@ -92,18 +91,7 @@
             background-color: black;
         }
 
-        .tree {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-            margin-bottom: 20px;
-            margin-top: 30px;
-
-        }
-
-        .tree div:first-child {
-            background-color: grey;
-        }
+      
 
         h3 {
             font-family: 'Poppins';
@@ -115,14 +103,7 @@
             text-transform: uppercase;
         }
 
-        .tree p {
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 22px;
-        }
-
+        
         .grid2 {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -153,26 +134,6 @@
             margin-right: 0;
         }
 
-        .flex1 div {
-            width: 380px;
-            height: 250px;
-            background-color: grey;
-        }
-
-        .flex1 {
-            display: flex;
-            justify-content: space-evenly;
-            gap: 10px;
-            margin-top: 20px;
-        }
-
-        .five {
-            display: grid;
-            grid-template-columns: 800px 500px;
-            margin-top: 20px;
-            position: relative;
-        }
-
         .item2 {
             position: absolute;
             z-index: 1;
@@ -180,35 +141,12 @@
             left: 890px;
         }
 
-        .five div div {
-            margin-bottom: 30px;
-        }
-
-        .five div:first-child {
-            justify-content: center;
-            align-content: center;
-
-        }
-
-        .five div:last-child {
-            display: flex;
-            justify-content: end;
-            align-content: center;
-            flex-direction: column;
-
-        }
-
-        .five p {
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 17px;
-            line-height: 26px
-        }
-
+       
         .six {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+            margin-top: 50px;
+            margin-bottom: 50px;
         }
 
         .six p {
@@ -341,7 +279,20 @@
             margin-right: 50px;
 
         }
+
+        .block {
+            background-image: url(./emblema.svg);
+            z-index: -1;
+            background-repeat: no-repeat;
+        }
+        .container2 div{
+            height: 150px;
+            align-content: center;
+            padding: 20px;
+        }
+       
     </style>
+
 </head>
 
 <body>
@@ -380,79 +331,45 @@
         <hr class="my-4">
         <section class="one">
             <div>
-                <small class="text-mude">Welcome to Homco</small>
-                <h1 class="text-white text-uppercase"><strong>Build your<br>Elegant dream<br>home interior</strong></h1>
+                <div class="block" style="width: 150px;height:100px"></div>
+                <h1 class="text-white text-uppercase"><strong>About US</strong></h1>
                 <p class=" lead text-white fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
                     tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                <button type="button" class="btn btn-secondary text-uppercase">Our progect</button>
+
             </div>
-            <div>
-                <img style="width: 320px; height: 330px;" src="./Polygon 1.svg">
-            </div>
+            <div></div>
         </section>
 
     </header>
     <main>
         <section class="two">
             <div>
+                <h2>HOME DESIGN CONSULTATION</h2>
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
                     ullamcorper mattis, pulvinar dapibus leo.</p>
                 <i class="fa-solid fa-arrow-right"></i>
             </div>
             <div>
+                <h2>HOME DESIGN 3D 2D INTERIOR SERVICE</h2>
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
                     ullamcorper mattis, pulvinar dapibus leo.</p>
                 <i class="fa-solid fa-arrow-right"></i>
             </div>
             <div>
+                <h2>HOME DESIGN CONSULTATION</h2>
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
                     ullamcorper mattis, pulvinar dapibus leo.</p>
                 <i class="fa-solid fa-arrow-right"></i>
             </div>
         </section>
-        <secton class="tree">
-            <div></div>
-            <div>
-                <small class="text-muted">WHO WE ARE</small>
-                <h3>WE ARE PERFECT TEAM FOR HOME INTERIOR DECORATION</h3>
-                <p class="lead text-muted">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                    architecto beatae vitae dicta sunt explicabo.</p>
-                <p class="lead text-muted">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                <ul class="grid2">
-                    <li><i class="fa-solid fa-circle-check"></i>Flexible Time</li>
-                    <li><i class="fa-solid fa-circle-check"></i>Perfect Work</li>
-                    <li><i class="fa-solid fa-circle-check"></i>Client Priority</li>
-                    <li><i class="fa-solid fa-circle-check"></i>Flexible Time</li>
-                    <li><i class="fa-solid fa-circle-check"></i>Perfect Work</li>
-                    <li><i class="fa-solid fa-circle-check"></i>Client Priority</li>
-                </ul>
-                <div class="container ">
-                    <div class="row bg-white">
-                        <div class="col bg-white">
-                            <h1 class="text-secondary">15Y</h1>
-                            <p>Experience</p>
-                        </div>
-                        <div class="col">
-                            <h1 class="text-secondary">25+</h1>
-                            <p>Best Team</p>
-                        </div>
-                        <div class="col">
-                            <h1 class="text-secondary">500+</h1>
-                            <p>Total Client</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </secton>
+
         <div>
             <small>How We Work</small>
             <h3>OUR WORK PROCEDURE</h3>
         </div>
-        <div class="container2">
+        <div class="container2" >
             <div class="row " style="gap: 15px;">
-                <div class="col" style="border: 1px solid grey;;">
+                <div class="col" style="border: 1px solid grey;">
                     <i class="fa-solid fa-comments" style="color: #6E6E6E;"></i>
                     <h4>CLIENT DESIGN CONSULTATION</h4>
                     <small class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
@@ -472,28 +389,49 @@
                 </div>
             </div>
         </div>
-        <section class="flex1">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+        
+        <section class="six">
+
+            <video controls width="650" poster="">
+                <source src="3" type="video/webm">
+
+            </video>
+            <div>
+                <small>Trust Us Now</small>
+                <h3>WHY CHOICE OUR HOME DESIGN INTERIOR SERVICES</h3>
+                <p style="margin-bottom: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                    tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. </p>
+                <ul class="grid2">
+                    <li><i class="fa-solid fa-circle-check"></i>Flexible Time</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Perfect Work</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Client Priority</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Flexible Time</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Perfect Work</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Client Priority</li>
+                </ul>
+            </div>
         </section>
-        <section class="five">
-            <div style="padding-top: 200px;">
-                <small>Perfect Partner</small>
-                <h3> WE HAVE PRIORITY FOR CAN CREATE DREAM HOME DESIGN</h3>
-                <p class="text-secondary">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                    architecto beatae vitae dicta sunt explicabo.</p>
-                <button type="button" class="btn btn-secondary text-uppercase">PORTFOLIO</button>
+        <section class="six">
+
+            
+            <div>
+                <small>Trust Us Now</small>
+                <h3>WHY CHOICE OUR HOME DESIGN INTERIOR SERVICES</h3>
+                <p style="margin-bottom: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                    tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. </p>
+                <ul class="grid2">
+                    <li><i class="fa-solid fa-circle-check"></i>Flexible Time</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Perfect Work</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Client Priority</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Flexible Time</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Perfect Work</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Client Priority</li>
+                </ul>
             </div>
-            <div style="padding-left: 200px;">
-                <div class="item1" style="width: 400px; height: 250px; background-color:  #C4C4C4;"></div>
-                <div class="item2" style="width: 400px; height: 250px; background-color:  #DADADA;"></div>
-                <div class="item3" style="width: 400px; height: 250px; background-color:  #C4C4C4;"></div>
-            </div>
+            <video controls width="650" poster="">
+                <source src="3" type="video/webm">
+
+            </video>
         </section>
         <section class="six">
 
